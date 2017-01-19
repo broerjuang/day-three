@@ -1,0 +1,35 @@
+{
+  "name": "dayThree",
+  "version": "0.1.0",
+  "private": true,
+  "description": "dayThree",
+  "main": "lib/main.js",
+  "scripts": {
+    "build": "babel src --ignore \"_*\" --out-dir lib",
+    "lint": "eslint . --max-warnings 0",
+    "typecheck": "flow",
+    "test-src": "mocha \"src/**/__tests__/*.js\"",
+    "test": "npm run lint && npm run typecheck && npm run test-src"
+  },
+  "dependencies": {
+    "global": "^4.3.1"
+  },
+  "devDependencies": {
+    "babel-core": "^6.21.0",
+    "babel-eslint": "^7.1.1",
+    "babel-plugin-syntax-flow": "^6.18.0",
+    "babel-plugin-transform-class-properties": "^6.19.0",
+    "babel-plugin-transform-flow-strip-types": "^6.21.0",
+    "babel-preset-es2015-native-generators": "^6.6.0",
+    "babel-preset-stage-2": "^6.18.0",
+    "eslint": "^3.13.1",
+    "eslint-plugin-babel": "^4.0.1",
+    "eslint-plugin-flowtype": "^2.30.0",
+    "expect": "^1.20.2",
+    "flow-bin": "^0.38.0",
+    "mocha": "^3.2.0"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}
